@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+  export default async function handler(req, res) {
   const value = String((req.query || {}).get?.("") ?? (req.query || {}). ?? "");
   const key = process.env.SYNOX_API_KEY || "FREE";
   const url = new URL("https://api.synoxcloud.xyz/anime/animekuindo/top");
